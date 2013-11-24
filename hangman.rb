@@ -52,8 +52,19 @@ end
 
 class ComputerPlayer
   
+  attr_accessor :secret
+  
+  def initialize
+    @secret = Dictionary.new.random_word
+  end
+  
 end
 
 class Dictionary
+  
+  attr_accessor :dict
+  
+  def initialize
+    @dict = 
   
 end
